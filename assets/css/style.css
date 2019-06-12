@@ -1,0 +1,29 @@
+body {
+    background-color: lightsteelblue !important;
+}
+.container{
+    max-width: 960px;
+}
+.title {
+    width: 100%;
+    background-color: #caebf2; 
+    color: #a9a9a9;;
+    font-size: 40px;
+    /* padding-left: 10px; */
+    margin-top: 10px;
+}
+.left {
+    background-color: #caebf2;
+    color: #a9a9a9;;
+    font-size: 40px;
+    /* padding-left: 10px; */
+    margin-top: 10px; 
+}
+.right {
+    background-color: #caebf2;
+    color: #a9a9a9;;
+    font-size: 40px;
+    /* padding-left: 10px; */
+    margin-top: 10px; 
+     
+}
