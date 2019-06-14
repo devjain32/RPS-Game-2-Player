@@ -10,25 +10,70 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link src="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3b074a4195.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <div class="container">
-    <div class="row">
-        <div class="title">
-            Rock Paper Scissors
+        <div class="row">
+            <div class="title">
+                Rock Paper Scissors
+            </div>
+        </div>
+        <div class="row d-flex">
+            <button class="startBtn expandBtn">Click here to start!</button>
+            <div class="playerEntry startBtn">
+                Enter your name!
+                <input id="name" type="text"></input>
+            </div>
+
+
+
+
+
+
+
+            <div class="left playerOne">
+                Player 1:
+                <img class="picsRPS rockOne"
+                    src="https://pngimage.net/wp-content/uploads/2018/05/dwayne-johnson-head-png.png" alt="rock">
+                <img class="picsRPS paperOne"
+                    src="https://www.bittbox.com/wp-content/uploads/2011/02/wrinkled_paper_1s.jpg" alt="paper">
+                <img class="picsRPS scissorsOne" src="http://www.pngmart.com/files/1/Scissors-PNG-Pic.png"
+                    alt="scissors">
+            </div>
+            <div class="right playerTwo">
+                Player 2:
+                <img class="picsRPS rockTwo"
+                    src="https://pngimage.net/wp-content/uploads/2018/05/dwayne-johnson-head-png.png" alt="rock">
+                <img class="picsRPS paperTwo"
+                    src="https://www.bittbox.com/wp-content/uploads/2011/02/wrinkled_paper_1s.jpg" alt="paper">
+                <img class="picsRPS scissorsTwo" src="http://www.pngmart.com/files/1/Scissors-PNG-Pic.png"
+                    alt="scissors">
+            </div>
+        </div>
+        <div class="row scores width">
+            <div class="col-md-4">
+                Player One Wins: <span id="playerOneWin">test</span>
+            </div>
+            <div class="col-md-4">
+                Player Two Wins: <span id="playerTwoWin">test</span>
+            </div>
+            <div class="col-md-4">
+                Ties: <span id="ties"></span>
+            </div>
+        </div>
+
+        <div class="row scores">
+            <div class="col-12 outcome">
+
+            </div>
         </div>
     </div>
-    <div class="row">
-        <div class="col-md-5 left">
-            rps
-        </div>
-        <div class="col-md-2"></div>
-        <div class="col-md-5 right">
-            rps
-        </div>
-    </div>
-</div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"

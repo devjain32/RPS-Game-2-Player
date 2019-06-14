@@ -9,21 +9,120 @@ body {
     background-color: #caebf2; 
     color: #a9a9a9;;
     font-size: 40px;
-    /* padding-left: 10px; */
-    margin-top: 10px;
+    margin-top: 20%;
+    border-left: 10px;
+    text-align: center;
+    border-radius: 5px;
 }
 .left {
     background-color: #caebf2;
     color: #a9a9a9;;
     font-size: 40px;
-    /* padding-left: 10px; */
     margin-top: 10px; 
+    flex-grow:1;
+    margin-right: 5px;
+    text-align: center;
+    height:160px;
+    border-radius: 5px;
 }
 .right {
     background-color: #caebf2;
-    color: #a9a9a9;;
+    color: #a9a9a9;
     font-size: 40px;
-    /* padding-left: 10px; */
     margin-top: 10px; 
-     
+    flex-grow: 1;
+    margin-left: 5px;
+    text-align: center;
+    height:160px;
+    border-radius: 5px;
 }
+.picsRPS {
+    height:100px;
+    padding:10px;
+    vertical-align: middle;
+    border-width: 0px;
+    border-color: lightsteelblue;
+    border-radius: 1px;
+}
+.picsRPS:hover {
+    height:120px;
+    width:fixed;
+    border-width: 3px;
+    border-color: lightsteelblue;
+    border-radius: 1px;
+    transition:.25s;
+}
+.scores {
+    border-top: 10px;
+    border-bottom: 10px;
+    background-color: #caebf2; 
+    color: #a9a9a9;;
+    font-size: 20px;
+    margin-top: 10px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.picsRPS:active {
+    height:140px;
+    width:fixed;
+    border-width: 3px;
+    border-color: lightsteelblue;
+    border-radius: 1px;
+    transition:.25s;
+}
+
+#ties,
+#playerOneWin,
+#playerTwoWin {
+    clear:both;
+    color:red;
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+}
+.startBtn {
+    margin:auto;
+    padding:10px;
+    margin-top:10px;
+    background-color: #caebf2; 
+    color: #a9a9a9;
+    border:0px;
+    border-radius: 5px;
+}
+
+.expandBtn:hover {
+    padding:15px;
+    transition:.25s
+}
+
+.expandBtn:focus {
+    transition:.5s;
+    padding-bottom: 150px;
+    padding-left: 100px;
+    padding-right: 900px;
+}
+
+
+/*
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyAQeEaiWH5dLtHD3YVTdGWZOPwYRULkP2c",
+    authDomain: "woodenspoon-ebc9d.firebaseapp.com",
+    databaseURL: "https://woodenspoon-ebc9d.firebaseio.com",
+    projectId: "woodenspoon-ebc9d",
+    storageBucket: "woodenspoon-ebc9d.appspot.com",
+    messagingSenderId: "172782486684",
+    appId: "1:172782486684:web:5a76102130993a8e"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+*/
